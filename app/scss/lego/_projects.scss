@@ -1,0 +1,43 @@
+.projects{
+    &__card {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__overlay {
+        background-color: rgba(10, 10, 12, 0.5);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $light;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        max-width: 60%;
+        font-size: 18px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    &__link {
+        font-size: 24px;
+        padding: 12px 17px 12px 60px;
+        border: 1px solid #fff;
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        margin-left: 48px;
+    }
+}

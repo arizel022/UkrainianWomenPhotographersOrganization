@@ -1,0 +1,48 @@
+.about {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        margin-right: 70px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 1.6;
+
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
+    }
+
+}
+
+.member-card {
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 25px;
+
+    &__img {
+        border-radius: 50%;
+        background-color: grey;
+        margin-right: 40px;
+    }
+
+    &__content {
+        text-align: center;
+        color: $green;
+        line-height: 1.6;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    &__position {
+        font-size: 20px;
+    }
+}
