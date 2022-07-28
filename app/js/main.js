@@ -13,6 +13,17 @@
     });
 })();
 
+window.onscroll = function showHeader() {
+    const header = document.querySelector('.header')
+
+    if (window.scrollY > 200) {
+        header.classList.add('fixed')
+
+    } else {
+        header.classList.remove('fixed')
+    }
+}
+
 // (() => {
 //     const menuBtnRef = document.querySelector("[data-menu-button]");
 //     const mobileMenuRef = document.querySelector("[data-menu]");
