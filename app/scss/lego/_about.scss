@@ -1,13 +1,4 @@
 .about {
-    &__container {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__content {
-        margin-right: 70px;
-    }
-
     &__text {
         font-size: 18px;
         line-height: 1.6;
@@ -17,24 +8,37 @@
         }
     }
 
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .member-card {
-    max-width: 50%;
-    display: flex;
-    align-items: center;
-    margin: 0 auto 25px;
+    width: calc((100% - 50px) / 2);
+
+    &:nth-child(2n + 1) {
+        margin-right: 50px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     &__img {
         border-radius: 50%;
         background-color: grey;
         margin-right: 40px;
+
     }
 
-    &__content {
+    &__name {
         text-align: center;
         color: $green;
         line-height: 1.6;
+
     }
 
     &__title {
@@ -44,5 +48,15 @@
 
     &__position {
         font-size: 20px;
+    }
+
+    &__text {
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 1.6;
+
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
     }
 }
