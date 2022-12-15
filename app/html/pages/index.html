@@ -16,12 +16,205 @@
 
   @@include('../lego/header.html')
   <main>
-    @@include('../lego/hero.html')
-    @@include('../lego/about.html')
-    @@include('../lego/projects.html')
-    @@include('../lego/edu.html')
-    @@include('../lego/news.html')
-    @@include('../lego/donate.html')
+    <section class="hero">
+      <div class="container hero__container">
+        <h1 class="hero__title visually-hidden">
+          We are
+          <br>
+          the women of Ukraine
+        </h1>
+      </div>
+    </section>
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="title">
+          Про нас
+        </h2>
+        <p class="about__text">
+          Cпільнота Організація жінок фотографів України присвячена жінкам працюючим з медіумом фотографії.
+          Нашою метою є об'єднання жінок фотографів українського походження, які знімають по всьому світу та
+          особисто в Україні. Через освітні та виставкові проекти ми хочемо допомогти жінкам більш повно розкрити
+          свої таланти, підвищити визнання Української жіночої фотографії у світі, який стає все більш
+          конкурентоспроможним і нестабільним та поділитися досвідом з ширшою аудиторією.
+
+        </p>
+        <div class="about__content">
+
+          <div class="member-card">
+            <div class="member-card__top">
+              <img class="member-card__img" src="./images/face.jpg" alt="Анна Мельникова" width="140" height="140">
+
+              <div class="member-card__name">
+                <h3 class="member-card__title">Анна Мельникова</h3>
+                <p class="member-card__position">
+                  президент та куратор
+                </p>
+              </div>
+
+            </div>
+
+            <p class="member-card__text">
+              Випускниця Королівської академії мистецтв у Нідерландах, зараз досліджує фотографію та працює з
+              експериментальними техніками. Викладала в the Bird in Flight school (Kiev), Pinchuck art center
+              (Kiev),
+              Karazin National University (Kharkov), Kharkov Academy of Design and Arts (Kharkov).
+              У 2020 році під час локдауна створила Ukrainian Women Photographers Organization. Кураторка
+              міжнародних
+              виставок та резиденцій в Америці, Швейцарії, Німеччині та Нідерландах. Фотографії з її проектів
+              входять
+              до приватних колекцій України, Америки та стран Європи.
+
+            </p>
+          </div>
+
+          <div class="member-card">
+            <div class="member-card__top">
+              <img class="member-card__img" src="./images/face.jpg" alt="Яна Григоренко" width="140" height="140">
+
+              <div class="member-card__name">
+                <h3 class="member-card__title">Яна Григоренко</h3>
+                <p class="member-card__position">
+                  кураторка NFT колекції
+                </p>
+              </div>
+            </div>
+
+            <p class="member-card__text">
+              Фотографка, художниця, куратор nft-проектів. Більшу частину життя (2004-2018) присвятила кар'єрі в
+              сфері
+              маркетингу, від рекламного копірайтера до арт-директора. У 2019 почала навчатися фотографії та
+              мистецтву, а також - роботу над першою документальною серією «CHILDREACH» (архітектура дитячих
+              майданчиків у сучасній Україні). Наразі працює у полі концептуальної фотографії та досліджує
+              жанр«потрет». У nft з 2021-го.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- <img src="./images/about.jpg" alt="робота" class="about__img" width="826" height="1125"> -->
+      </div>
+    </section>
+    <section class="collections" id="collections">
+      <h2 class="visually-hidden">Наші платформи</h2>
+      <article class="project-card project-card--3">
+        <div class="project-card__overlay">
+          <h3 class="project-card__title">
+            Назва колекції номер 1
+          </h3>
+          <p class="project-card__text">
+            Опис колекції номер 1 -
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti debitis id, cumque exercitationem neque
+            aut doloremque natus, distinctio reiciendis ipsum hic dignissimos esse eius consectetur qui, commodi autem
+            quasi assumenda?
+          </p>
+          <a class="project-card__link" href="platform-page.html">
+            Колекція
+            <svg class="project-card__icon" width="35" height="36">
+              <use xlink:href="images/images.svg#long-arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </article>
+      <article class="project-card project-card--4">
+        <div class="project-card__overlay">
+          <h3 class="project-card__title">
+            Назва колекції номер 2
+          </h3>
+          <p class="project-card__text">
+            Опис колекції номер 2 -
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti debitis id, cumque exercitationem neque
+            aut doloremque natus, distinctio reiciendis ipsum hic dignissimos esse eius consectetur qui, commodi autem
+            quasi assumenda?
+          </p>
+          <a class="project-card__link" href="platform-page.html">
+            Колекція
+            <svg class="project-card__icon" width="35" height="36">
+              <use xlink:href="images/images.svg#long-arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </article>
+    </section>
+    <section class="projects" id="projects">
+      <h2 class="visually-hidden">Наші проекти</h2>
+      <article class="project-card project-card--int project-card--1">
+        <div class="project-card__overlay">
+          <h3 class="project-card__title">
+            100 жінок
+          </h3>
+          <p class="project-card__text">
+            Виставка 100 жінок це перший груповий проект Організації Жінок Фотографів Укрїни. Ідея виставки зібрати
+            сто жінок фотографок з різних куточків України, щоб виіуалізувати поняття, що означає бути жінкой і
+            музой. Чи може ховатись щось більше за звичайним селфі? Мистецтво бути. Даний проект відображає
+            зростаючу зацікавленість до селфі, як репрезентації успішного Я, а також висвітлює популярне сьогодні
+            явище - жіноче мистецтво. 100 жінок репрезентують своє фото і текст про те, що означає бути музой для
+            себе самої. Ціль проекту – об єднання жінок фотографок із різних міст України, а також аналіз так
+            званого жіночого мистецтва.
+
+          </p>
+          <a class="project-card__link" href="./project-100-women.html">
+            Галерея
+            <svg class="project-card__icon" width="35" height="36">
+              <use xlink:href="images/images.svg#long-arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </article>
+      <article class="project-card project-card--int project-card--2">
+        <div class="project-card__overlay">
+          <h3 class="project-card__title">
+            Щоденники. Приватне та публічне
+          </h3>
+          <p class="project-card__text">
+            Проект "Щоденники. Приватне та публічне." - це наше послання світу зашифроване в зображеннях про наші
+            відчуття в період, що розпочався з 24.02.2022. Послання може бути простим і зрозумілим без слів, може
+            бути складним і вимагати додаткових пояснень, коротким чи довгим, драматичним чи веселим, шокуючим чи
+            милим. Але воно завжди є.
+            Більшість щоденників — це спроба впоратися зі стресом, депресією та складними обставинами. У цьому
+            проекті важливим стає особисте трактування обставин, що склалися, тут немає об'єктивності, це глибоко
+            особисте не дивлячись на прив'язку до подій і дат. Зіставити індивідуальне переживання в концентрований
+            образ, що знаходить емпатичний відгук у глядача і таким чином зробити рефлексію та особисті спогади
+            витвором мистецтва.
+            Куратори: Саміра Дамато, Фредерік Шобен, Анна Мельникова
+            Проект триває…
+          </p>
+          <a class="project-card__link" href="./project-diaries.html">
+            Галерея
+            <svg class="project-card__icon" width="35" height="36">
+              <use xlink:href="images/images.svg#long-arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </article>
+    </section>
+    <section class="edu">
+      <article class="project-card project-card--edu">
+        <div class="project-card__overlay">
+          <h3 class="project-card__title">
+            Освіта
+          </h3>
+          <p class="project-card__text">
+            Текст про розділ Освіта та новини
+          </p>
+          <a class="project-card__link" href="./blog.html">
+            Ознайомитися
+            <svg class="project-card__icon" width="35" height="36">
+              <use xlink:href="images/images.svg#long-arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </article>
+    </section>
+    <section class="donate section">
+      <a href="./donates.html" class="donate__link">
+        Допомогти
+        <svg class="donate__icon" width="35" height="36">
+          <use xlink:href="images/images.svg#long-arrow-right"></use>
+        </svg>
+      </a>
+    </section>
+
 
   </main>
   @@include('../lego/footer.html')

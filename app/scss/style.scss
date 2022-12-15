@@ -1,12 +1,22 @@
 @import 'reset';
+@import '../node_modules/magnific-popup/dist/magnific-popup.css';
+$light: #fff6f1;
+$blue-400: #085bb9;
+$blue-800: #081856;
+$dark-900: #0a0a0c;
+$yellow-300: #ffd646;
+$green: #00AC8D;
+
 @import 'global';
+
 
 @import 'lego/header';
 @import 'lego/hero';
 @import 'lego/about';
-@import 'lego/projects';
+@import 'lego/project-card';
 @import 'lego/edu';
 @import 'lego/news';
 @import 'lego/donate';
 @import 'lego/pro';
+@import 'lego/nft-platforms';
 @import 'lego/footer';

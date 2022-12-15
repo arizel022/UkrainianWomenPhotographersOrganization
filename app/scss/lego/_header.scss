@@ -165,13 +165,15 @@
         // border: 1px solid $light;
         width: 44px;
         height: 44px;
-        // background-color: rgba(10, 10, 12, 0.1);
+        background-color: rgba(10, 10, 12, 0.418);
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
         margin-right: 40px;
+        z-index: 1;
         transition: box-shadow 0.3s;
+    
 
         &.is-open {
             .menu__line {
@@ -199,6 +201,19 @@
 
         &.is-open {
             transform: scale(100%) translateX(0);
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                background-color: #0000006e;
+                width: 300vw;
+                height: 63px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                z-index: -1;
+            }
         }
     }
 
