@@ -43,6 +43,11 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.pro__popup-gallery').slick({
+		dots: true,
+		arrows: true
+	  });
+
 	$('.popup-youtube').magnificPopup({
 		disableOn: 700,
 		type: 'iframe',

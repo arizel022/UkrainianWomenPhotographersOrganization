@@ -1,12 +1,72 @@
 .edu {
     padding-top: 0;
     padding-bottom: 0;
+
     &__list {
-        display: flex;
-        flex-wrap: wrap;
+        margin-bottom: 60px;
     }
 
     &__item {
-        width: 50%;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
+}
+
+.card {
+    // padding: 30px;
+    // border-radius: 15px;
+    // position: relative;
+    // overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__content {
+        padding: 60px;
+    }
+
+    &__title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: 18px;
+        // display: -webkit-box;
+        // -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 6;
+        // overflow: hidden;
+    }
+
+    // &__link {
+    //     color: $green;
+    //     width: fit-content;
+    //     display: flex;
+    //     justify-content: flex-end;
+    //     align-items: center;
+    //     font-size: 18px;
+    //     line-height: 1;
+    //     margin-top: auto;
+    //     margin-left: auto;
+    //     text-transform: uppercase;
+    //     text-shadow: 0 4px 8px #FFFFFF;
+
+
+    //     &:hover {
+    //         .card__icon {
+    //             margin-left: 30px;
+    //         }
+    //     }
+    // }
+
+    // &__icon {
+    //     margin-left: 15px;
+    //     fill: $green;
+    //     transition: margin-left 0.5s;
+    // }
+
+    // &__inner {
+    //     display: flex;
+    // }
 }

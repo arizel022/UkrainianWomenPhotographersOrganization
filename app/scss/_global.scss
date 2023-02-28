@@ -141,65 +141,7 @@ main {
     }
 }
 
-.card {
-    padding: 30px;
-    border-radius: 15px;
-    position: relative;
-    overflow: hidden;
 
-    &__title {
-        font-size: 30px;
-        margin-bottom: 30px;
-    }
-
-    &__text {
-        font-size: 18px;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 6;
-        overflow: hidden;
-    }
-
-    &__content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__link {
-        color: $green;
-        width: fit-content;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        font-size: 18px;
-        line-height: 1;
-        margin-top: auto;
-        margin-left: auto;
-        text-transform: uppercase;
-        text-shadow: 0 4px 8px #FFFFFF;
-
-
-        &:hover {
-            .card__icon {
-                margin-left: 30px;
-            }
-        }
-    }
-
-    &__icon {
-        margin-left: 15px;
-        fill: $green;
-        transition: margin-left 0.5s;
-    }
-
-    &__inner {
-        display: flex;
-    }
-
-    &__img {
-        margin-right: 30px;
-    }
-}
 
 .donate {
     display: flex;
