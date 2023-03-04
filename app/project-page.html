@@ -14,16 +14,45 @@
 
 <body>
 
-  <header class="header" id="header">
+  <header class="header fixed" id="header">
     <div class="container header__container">
 
         <div class="header__top">
-            <a class="logo" href="./index.html">
-                <img class="logo__img logo__img--white" src="images/logo--white.svg" alt="logo Ukrainian Women Photographers Organization white" width="302" height="94">
-                <img class="logo__img logo__img--black" src="images/logo.svg" alt="logo Ukrainian Women Photographers Organization black" width="302" height="94">
+            <a class="logo header__logo" href="./index.html">
+                <img class="logo__img" src="images/logo--white.svg" alt="logo Ukrainian Women Photographers Organization white" width="150" height="47">
             </a>
 
-            <div class="header__inner">
+            <nav class="menu">
+                <button class="menu__btn int-btn" type="button" data-menu-button>
+                    <span class="menu__line"></span>
+                    <span class="visually-hidden">Open main menu</span>
+                </button>
+                <ul class="menu__list" data-menu>
+                    <li class="menu__item">
+                        <a href="./index.html#header" class="menu__link">Початок</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./index.html#about" class="menu__link">Про нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./index.html#collections" class="menu__link">NFT колекція</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./index.html#projects" class="menu__link">Проекти</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./blog.html" class="menu__link">Освіта</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./donates.html" class="menu__link">Підтримка</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./index.html#footer" class="menu__link">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__ints">
                 <a class="header__lang-btn int-btn" href="">
                     <span class="header__btn-txt">eng</span>
                 </a>
@@ -48,36 +77,6 @@
             </div>
         </div>
 
-
-        <nav class="menu">
-            <button class="menu__btn int-btn" type="button" data-menu-button>
-                <span class="menu__line"></span>
-                <span class="visually-hidden">Open main menu</span>
-            </button>
-            <ul class="menu__list" data-menu>
-                <li class="menu__item">
-                    <a href="./index.html#header" class="menu__link">Початок</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./index.html#about" class="menu__link">Про нас</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./index.html#collections" class="menu__link">NFT колекція</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./index.html#projects" class="menu__link">Проекти</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./blog.html" class="menu__link">Освіта</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./donates.html" class="menu__link">Підтримка</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./index.html#footer" class="menu__link">Контакти</a>
-                </li>
-            </ul>
-        </nav>
     </div>
 </header>
   <main>
