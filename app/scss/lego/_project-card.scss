@@ -20,25 +20,22 @@
     }
 
     // далі 4 моди карток на головній
-    &--1:after {
-        background-image: url('../images/projects/1.jpg');
+    &--100wom:after {
+        background-image: url('../images/home/100wom.jpg');
     }
 
-    &--2:after {
-        background-image: url('../images/projects/2.jpg');
+    &--diaries:after {
+        background-image: url('../images/home/diaries.jpg');
     }
 
-    &--3:after {
-        background-image: url('../images/projects/3.jpg');
+    &--nfts:after {
+        background-image: url('../images/home/evaholts.jpg');
     }
 
-    &--4:after {
-        background-image: url('../images/projects/4.jpg');
-    }
 
     // картка на сторінці нфт-платформи
-    &--5:after {
-        background-image: url('../images/about.jpg');
+    &--nft-page-bg:after {
+        background-image: url('../images/nft/nftcollspage.jpg');
     }
 
     // модифікована картка проекту із заблуренням на ховері
