@@ -171,6 +171,11 @@
                 fill: $light;
             }
         }
+
+        &:focus {
+            outline: transparent;
+            opacity: 0.9;
+        }
     }
 
     &__img {

@@ -14,71 +14,7 @@
 
 <body>
 
-  <header class="header fixed" id="header">
-    <div class="container header__container">
-
-        <div class="header__top">
-            <a class="logo header__logo" href="./index.html">
-                <img class="logo__img" src="images/logo--white.svg" alt="logo Ukrainian Women Photographers Organization white" width="150" height="47">
-            </a>
-
-            <nav class="menu">
-                <button class="menu__btn int-btn" type="button" data-menu-button>
-                    <span class="menu__line"></span>
-                    <span class="visually-hidden">Open main menu</span>
-                </button>
-                <ul class="menu__list" data-menu>
-                    <li class="menu__item">
-                        <a href="./index.html#header" class="menu__link">Home</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="./index.html#about" class="menu__link">About</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="./index.html#collections" class="menu__link">NFT collections</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="./index.html#projects" class="menu__link">Projects</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="./blog.html" class="menu__link">Education</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="./donates.html" class="menu__link">Donates</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="./index.html#footer" class="menu__link">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="header__ints">
-                <a class="header__lang-btn int-btn" href="">
-                    <span class="header__btn-txt">ua</span>
-                </a>
-                <ul class="social">
-                    <li class="social__item">
-                        <a href="https://opensea.io/collection/uwpo" class="social__link">
-                            <span class="social__text">OpenSea</span>
-                            <svg class="social__icon" width="31" height="28">
-                                <use xlink:href="images/images.svg#opensea"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="https://foundation.app/@UWPO" class="social__link">
-                            <span class="social__text">Foundation</span>
-                            <svg class="social__icon" width="31" height="28">
-                                <use xlink:href="images/images.svg#foundation"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-</header>
+  @@include('../lego/header.html')
   <main>
     <div class="wrapper">
       <article class="project-card project-card--nft-page-bg">
@@ -169,42 +105,7 @@
 
 
   </main>
-  <footer class="footer" id="footer">
-    <div class="container footer__container">
-        <ul class="footer__list">
-            <li class="footer__item">
-                <a class="footer__link" href="mailto:uwphotographers@ukr.net">
-                    <svg class="footer__icon" width="24" height="24">
-                        <use xlink:href="images/images.svg#mail"></use>
-                    </svg>
-                    uwphotographers@ukr.net
-                </a>
-            </li>
-            <li class="footer__item">
-
-                <a class="footer__link" href="tel:+491746672674">
-                    <svg class="footer__icon" width="24" height="24">
-                        <use xlink:href="images/images.svg#call"></use>
-                    </svg>
-                    +49 174 6672674
-                </a>
-            </li>
-            <li class="footer__item">
-                <a class="footer__link" href="tel:+380679064591">
-                    <svg class="footer__icon" width="24" height="24">
-                        <use xlink:href="images/images.svg#call"></use>
-                    </svg>
-                    +38 067 9064591
-                </a>
-            </li>
-        </ul>
-        <p class="footer__copy">
-            Copyright © All rights reserved
-        </p>
-    </div>
-</footer>
-
-
+  @@include('../lego/footer.html')
 
   <script src="js/main.min.js"></script>
 </body>

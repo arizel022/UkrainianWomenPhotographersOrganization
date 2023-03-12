@@ -48,6 +48,9 @@
     }
 
     &__link {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         font-size: 24px;
         padding: 12px 17px 12px 60px;
         border: 1px solid $green;
