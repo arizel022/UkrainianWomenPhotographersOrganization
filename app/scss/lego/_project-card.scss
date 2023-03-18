@@ -32,6 +32,14 @@
         background-image: url('../images/home/evaholts.jpg');
     }
 
+    &--donate:after {
+        background-image: url('../images/home/donate.jpg');
+    }
+
+    &--donates:after {
+        background-image: url('../images/donates.jpg');
+    }
+
 
     // картка на сторінці нфт-платформи
     &--nft-page-bg:after {
