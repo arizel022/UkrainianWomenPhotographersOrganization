@@ -1,24 +1,26 @@
 .edu {
 
+    &__list {
+        display: flex;
+        gap: 45px;
+    }
 
     &__item {
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
+        width: calc((100% - 45px) / 2);
     }
 }
 
-.card {
-    // padding: 30px;
-    // border-radius: 15px;
-    // position: relative;
-    // overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.edu-card {
+    width: 100%;
+    text-align: center;
+
+    &__img {
+        object-fit: cover;
+        margin: 0 auto;
+    }
 
     &__content {
-        padding: 60px;
+        padding: 45px;
     }
 
     &__title {
@@ -27,41 +29,7 @@
     }
 
     &__text {
-        font-size: 18px;
-        // display: -webkit-box;
-        // -webkit-box-orient: vertical;
-        // -webkit-line-clamp: 6;
-        // overflow: hidden;
+
+        text-align: left;
     }
-
-    // &__link {
-    //     color: $green;
-    //     width: fit-content;
-    //     display: flex;
-    //     justify-content: flex-end;
-    //     align-items: center;
-    //     font-size: 18px;
-    //     line-height: 1;
-    //     margin-top: auto;
-    //     margin-left: auto;
-    //     text-transform: uppercase;
-    //     text-shadow: 0 4px 8px #FFFFFF;
-
-
-    //     &:hover {
-    //         .card__icon {
-    //             margin-left: 30px;
-    //         }
-    //     }
-    // }
-
-    // &__icon {
-    //     margin-left: 15px;
-    //     fill: $green;
-    //     transition: margin-left 0.5s;
-    // }
-
-    // &__inner {
-    //     display: flex;
-    // }
 }

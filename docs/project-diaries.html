@@ -12,17 +12,18 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body data-body>
 
   <header class="header fixed" id="header">
     <div class="container header__container">
 
         <div class="header__top">
-            <a class="logo header__logo" href="./index.html">
-                <img class="logo__img" src="images/logo--white.svg" alt="logo Ukrainian Women Photographers Organization white" width="150" height="47">
-            </a>
+
 
             <nav class="menu">
+                <a class="logo header__logo" href="./index.html">
+                    <img class="logo__img" src="images/logo--white.svg" alt="logo Ukrainian Women Photographers Organization white" width="150" height="47">
+                </a>
                 <button class="menu__btn int-btn" type="button" data-menu-button>
                     <span class="menu__line"></span>
                     <span class="visually-hidden">Open main menu</span>
@@ -32,48 +33,50 @@
                         <a href="./index.html" class="menu__link">Home</a>
                     </li>
                     <li class="menu__item">
-                        <a href="./index.html#about" class="menu__link">About</a>
+                        <a href="./index.html#about" class="menu__link anchor" data-menu-link>About</a>
                     </li>
                     <li class="menu__item">
                         <a href="./nft-page.html" class="menu__link">NFT collections</a>
                     </li>
                     <li class="menu__item">
-                        <a href="./index.html#projects" class="menu__link">Projects</a>
+                        <a href="./index.html#projects" class="menu__link anchor" data-menu-link>Projects</a>
                     </li>
                     <li class="menu__item">
                         <a href="./education.html" class="menu__link">Education</a>
                     </li>
                     <li class="menu__item">
-                        <a href="./donates.html" class="menu__link">Donates</a>
+                        <a href="./help.html" class="menu__link">Help</a>
                     </li>
                     <li class="menu__item">
-                        <a href="./index.html#footer" class="menu__link">Contacts</a>
+                        <a href="./contacts.html" class="menu__link">Contacts</a>
                     </li>
                 </ul>
             </nav>
 
-            <div class="header__ints">
+            <div class="header__ints" data-header-ints>
                 <a class="header__lang-btn int-btn" href="">
                     <span class="header__btn-txt">ua</span>
                 </a>
+
                 <ul class="social">
                     <li class="social__item">
-                        <a href="https://opensea.io/collection/uwpo" class="social__link">
-                            <span class="social__text">OpenSea</span>
-                            <svg class="social__icon" width="31" height="28">
-                                <use xlink:href="images/images.svg#opensea"></use>
+                        <a href="https://www.youtube.com/@UWPO/featured" class="social__link" target="_blank">
+                            <span class="social__text">Youtube</span>
+                            <svg class="social__icon" width="25" height="25">
+                                <use xlink:href="images/images.svg#youtube"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a href="https://foundation.app/@UWPO" class="social__link">
-                            <span class="social__text">Foundation</span>
-                            <svg class="social__icon" width="31" height="28">
-                                <use xlink:href="images/images.svg#foundation"></use>
+                        <a href="https://www.instagram.com/u_women_photographers" class="social__link" target="_blank">
+                            <span class="social__text">Instagram</span>
+                            <svg class="social__icon" width="25" height="25">
+                                <use xlink:href="images/images.svg#inst"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
+
             </div>
         </div>
 
@@ -88,143 +91,218 @@
           <h1 class="title">Diary. Private & Public</h1>
 
           <p class="pro__text">
-            The Diaries project is our  message encrypted in pictures about women  feelings during the period that has started on February 24.2022. It can be easy and clear without words, it can be difficult and expressed by excessive explanation, short or prolonged, dramatic or funny, shocking or cute. But it always will be personal.
-            Most of the diaries are an attempt to cope stress, depression and hard circumstances. In this project, personal interpretation of the circumstances becomes important, there is no objectivity here, it is deeply personal, despite being tied to events and dates. Transform individual experience into a concentrated image, an empathic response in perception and  made such an effect of feeling a reflection which transformed into an individual work of art are revealed.
-            
+            The Diaries project is our message encrypted in pictures about women feelings during the period that has
+            started on February 24.2022. It can be easy and clear without words, it can be difficult and expressed by
+            excessive explanation, short or prolonged, dramatic or funny, shocking or cute. But it always will be
+            personal.
+            Most of the diaries are an attempt to cope stress, depression and hard circumstances. In this project,
+            personal interpretation of the circumstances becomes important, there is no objectivity here, it is deeply
+            personal, despite being tied to events and dates. Transform individual experience into a concentrated image,
+            an empathic response in perception and made such an effect of feeling a reflection which transformed into an
+            individual work of art are revealed.
+
           </p>
           <div class="pro__inner">
-              <h2 class="pro__subtitle">Куратори проекту:</h2>
-              <ul class="pro__list">
-                <li class="pro__item">
-                  Samira Damato (Netherlands)
-                </li>
-                <li class="pro__item">
-                  Frederic Chaubin (France)
-                </li>
-                <li class="pro__item">
-                  Hanna Melnykova (Ukraine)
-                </li>
-              </ul>
-              <h2 class="pro__subtitle">Project participants:</h2>
-              <ul class="pro__list">
-                <li class="pro__item">
-                  Gera Artemova
-                </li>
-                <li class="pro__item">
-                  Maryna Brodovska
-                </li>
-                <li class="pro__item">
-                  Marysia Myanovska
-                </li>
-                <li class="pro__item">
-                  Viktoria Sorochuk
-                </li>
-                <li class="pro__item">
-                  Tetiana Bohuslavska
-                </li>
-                <li class="pro__item">
-                  Xenia Petrovska
-                </li>
-                <li class="pro__item">
-                  Sofiya Chotyrbok
-                </li>
-                <li class="pro__item">
-                  Yana Hryhorenko
-                </li>
-              </ul>
+            <h2 class="pro__subtitle">Project curators:</h2>
+            <ul class="pro__list">
+              <li class="pro__item">
+                Samira Damato (Netherlands)
+              </li>
+              <li class="pro__item">
+                Frederic Chaubin (France)
+              </li>
+              <li class="pro__item">
+                Hanna Melnykova (Ukraine)
+              </li>
+            </ul>
+            <h2 class="pro__subtitle">Project participants:</h2>
+            <ul class="pro__list">
+              <li class="pro__item">
+                Gera Artemova
+              </li>
+              <li class="pro__item">
+                Maryna Brodovska
+              </li>
+              <li class="pro__item">
+                Marysia Myanovska
+              </li>
+              <li class="pro__item">
+                Viktoria Sorochuk
+              </li>
+              <li class="pro__item">
+                Tetiana Bohuslavska
+              </li>
+              <li class="pro__item">
+                Xenia Petrovska
+              </li>
+              <li class="pro__item">
+                Sofiya Chotyrbok
+              </li>
+              <li class="pro__item">
+                Yana Hryhorenko
+              </li>
+            </ul>
           </div>
 
           <div class="pro__popup-gallery popup-gallery">
             <div class="pro__gallery-item">
               <div class="pro__gallery-content">
-                <a class="pro__zoom-link" href="./images/projects/diaries/xenia-petrovska-small.jpg">
-                  <img class="pro__img" src="./images/projects/diaries/xenia-petrovska-small.jpg" width="400" alt="">
+                <a class="pro__zoom-link" href="./images/projects/diaries/00-chotyrbok-sofiya.jpg" title="Chotyrbok Sofiya">
+                  <img class="pro__img" src="./images/projects/diaries/00-chotyrbok-sofiya.jpg" width="1200" height="800" alt="work by Chotyrbok Sofiya">
                   <svg class="pro__icon" width="100" height="100">
                     <use xlink:href="images/images.svg#zoom-in"></use>
                   </svg>
+                  <p class="pro__author-name">Chotyrbok Sofiya</p>
                 </a>
               </div>
             </div>
 
             <div class="pro__gallery-item">
               <div class="pro__gallery-content">
-                <a class="pro__zoom-link" href="./images/projects/diaries/gera-artemova-war-diary.jpg">
-                  <img class="pro__img" src="./images/projects/diaries/gera-artemova-war-diary.jpg" width="400" alt="">
+                <a class="pro__zoom-link" href="./images/projects/diaries/01-maryna-brodovska-I-joke.jpg" title="Maryna Brodovska - I joke">
+                  <img class="pro__img" src="./images/projects/diaries/01-maryna-brodovska-I-joke.jpg" width="1200" height="800" alt="work by Maryna Brodovska">
                   <svg class="pro__icon" width="100" height="100">
                     <use xlink:href="images/images.svg#zoom-in"></use>
                   </svg>
+                  <p class="pro__author-name">Maryna Brodovska - I joke</p>
                 </a>
               </div>
             </div>
 
             <div class="pro__gallery-item">
               <div class="pro__gallery-content">
-                <a class="pro__zoom-link" href="./images/projects/diaries/maryna-brodovska-joke.jpg">
-                  <img class="pro__img" src="./images/projects/diaries/maryna-brodovska-joke.jpg" width="400" alt="">
+                <a class="pro__zoom-link" href="./images/projects/diaries/02-sofia-chotyrbok.jpg" title="Chotyrbok Sofiya">
+                  <img class="pro__img" src="./images/projects/diaries/02-sofia-chotyrbok.jpg" width="1200" height="800" alt="">
                   <svg class="pro__icon" width="100" height="100">
                     <use xlink:href="images/images.svg#zoom-in"></use>
                   </svg>
+                  <p class="pro__author-name">Chotyrbok Sofiya</p>
                 </a>
               </div>
             </div>
 
             <div class="pro__gallery-item">
               <div class="pro__gallery-content">
-                <a class="pro__zoom-link" href="./images/projects/diaries/marysia-myanovska.jpg">
-                  <img class="pro__img" src="./images/projects/diaries/marysia-myanovska.jpg" width="400" alt="">
+                <a class="pro__zoom-link" href="./images/projects/diaries/03-tetiana-bohuslavska-spring-in-the-throat.jpg" title="Tetiana Bohuslavska - Spring in the throat">
+                  <img class="pro__img" src="./images/projects/diaries/03-tetiana-bohuslavska-spring-in-the-throat.jpg" width="1200" height="800" alt="Tetiana Bohuslavska - Spring in the throa">
                   <svg class="pro__icon" width="100" height="100">
                     <use xlink:href="images/images.svg#zoom-in"></use>
                   </svg>
+                  <p class="pro__author-name">Tetiana Bohuslavska - Spring in the throat</p>
                 </a>
               </div>
             </div>
 
             <div class="pro__gallery-item">
               <div class="pro__gallery-content">
-                <a class="pro__zoom-link" href="./images/projects/diaries/sofia-chotyrbok.jpg">
-                  <img class="pro__img" src="./images/projects/diaries/sofia-chotyrbok.jpg" width="400" alt="">
+                <a class="pro__zoom-link" href="./images/projects/diaries/04-yana-hryhorenko-disturbing-beauty.jpg" title="Yana Hryhorenko - Disturbing beauty">
+                  <img class="pro__img" src="./images/projects/diaries/04-yana-hryhorenko-disturbing-beauty.jpg" width="1200" height="800" alt="Yana Hryhorenko - Disturbing beauty">
                   <svg class="pro__icon" width="100" height="100">
                     <use xlink:href="images/images.svg#zoom-in"></use>
                   </svg>
+                  <p class="pro__author-name">Yana Hryhorenko - Disturbing beauty</p>
                 </a>
               </div>
             </div>
 
             <div class="pro__gallery-item">
               <div class="pro__gallery-content">
-                <a class="pro__zoom-link" href="./images/projects/diaries/tetiana-bohuslavska-spring-in-the-throat.jpg">
-                  <img class="pro__img" src="./images/projects/diaries/tetiana-bohuslavska-spring-in-the-throat.jpg"
-                    width="400" alt="">
+                <a class="pro__zoom-link" href="./images/projects/diaries/05-viktoriya-sorochuk-episodes-of-my-new-life.jpg" title="">
+                  <img class="pro__img" src="./images/projects/diaries/05-viktoriya-sorochuk-episodes-of-my-new-life.jpg"
+                    width="1200" height="800" alt="">
                   <svg class="pro__icon" width="100" height="100">
                     <use xlink:href="images/images.svg#zoom-in"></use>
                   </svg>
+                  <p class="pro__author-name">Viktoriya Sorochuk - Episodes of my new life</p>
                 </a>
               </div>
             </div>
 
             <div class="pro__gallery-item">
               <div class="pro__gallery-content">
-                <a class="pro__zoom-link" href="./images/projects/diaries/viktoriya-sorochuk-episodes-of-my-new-life.jpg">
-                  <img class="pro__img" src="./images/projects/diaries/viktoriya-sorochuk-episodes-of-my-new-life.jpg"
-                    width="400" alt="">
+                <a class="pro__zoom-link"
+                  href="./images/projects/diaries/06-marysia-myanovska.jpg" title="Marysia Myanovska">
+                  <img class="pro__img" src="./images/projects/diaries/06-marysia-myanovska.jpg"
+                    width="1200" height="800" alt="Marysia Myanovska">
                   <svg class="pro__icon" width="100" height="100">
                     <use xlink:href="images/images.svg#zoom-in"></use>
                   </svg>
+                  <p class="pro__author-name">Marysia Myanovska</p>
                 </a>
               </div>
             </div>
 
             <div class="pro__gallery-item">
               <div class="pro__gallery-content">
-                <a class="pro__zoom-link" href="./images/projects/diaries/yana-hryhorenko.jpg">
-                  <img class="pro__img" src="./images/projects/diaries/yana-hryhorenko.jpg" width="400" alt="">
+                <a class="pro__zoom-link" href="./images/projects/diaries/07-xenia-petrovska.jpg" title="Xenia Petrovska">
+                  <img class="pro__img" src="./images/projects/diaries/07-xenia-petrovska.jpg" width="1200" height="800" alt="Xenia Petrovska">
                   <svg class="pro__icon" width="100" height="100">
                     <use xlink:href="images/images.svg#zoom-in"></use>
                   </svg>
+                  <p class="pro__author-name">Xenia Petrovska</p>
                 </a>
               </div>
             </div>
-            
+
+            <div class="pro__gallery-item">
+              <div class="pro__gallery-content">
+                <a class="pro__zoom-link" href="./images/projects/diaries/08-gera-artemova-war-diary.jpg" title="Gera Artemova - War diary">
+                  <img class="pro__img" src="./images/projects/diaries/08-gera-artemova-war-diary.jpg" width="1200" height="800" alt="Gera Artemova - War diary">
+                  <svg class="pro__icon" width="100" height="100">
+                    <use xlink:href="images/images.svg#zoom-in"></use>
+                  </svg>
+                  <p class="pro__author-name">Gera Artemova - War diary</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="pro__gallery-item">
+              <div class="pro__gallery-content">
+                <a class="pro__zoom-link" href="./images/projects/diaries/exhibition-1.jpg" title="Exhibition">
+                  <img class="pro__img" src="./images/projects/diaries/exhibition-1.jpg" width="1200" height="800" alt="Exhibition">
+                  <svg class="pro__icon" width="100" height="100">
+                    <use xlink:href="images/images.svg#zoom-in"></use>
+                  </svg>
+                  <p class="pro__author-name">Exhibition</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="pro__gallery-item">
+              <div class="pro__gallery-content">
+                <a class="pro__zoom-link" href="./images/projects/diaries/exhibition-2.jpg" title="Exhibition">
+                  <img class="pro__img" src="./images/projects/diaries/exhibition-2.jpg" width="1200" height="800" alt="Exhibition">
+                  <svg class="pro__icon" width="100" height="100">
+                    <use xlink:href="images/images.svg#zoom-in"></use>
+                  </svg>
+                  <p class="pro__author-name">Exhibition</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="pro__gallery-item">
+              <div class="pro__gallery-content">
+                <a class="pro__zoom-link" href="./images/projects/diaries/exhibition-3.jpg" title="Exhibition">
+                  <img class="pro__img" src="./images/projects/diaries/exhibition-3.jpg" width="1200" height="800" alt="Exhibition">
+                  <svg class="pro__icon" width="100" height="100">
+                    <use xlink:href="images/images.svg#zoom-in"></use>
+                  </svg>
+                  <p class="pro__author-name">Exhibition</p>
+                </a>
+              </div>
+            </div>
+
+                        <div class="pro__gallery-item">
+              <div class="pro__gallery-content">
+                <a class="pro__zoom-link" href="./images/projects/diaries/exhibition-4.jpg" title="Exhibition">
+                  <img class="pro__img" src="./images/projects/diaries/exhibition-4.jpg" width="1200" height="800" alt="Exhibition">
+                  <svg class="pro__icon" width="100" height="100">
+                    <use xlink:href="images/images.svg#zoom-in"></use>
+                  </svg>
+                  <p class="pro__author-name">Exhibition</p>
+                </a>
+              </div>
+            </div>
 
 
 
@@ -279,22 +357,26 @@
                 </a>
             </li>
         </ul>
-        <ul class="footer__social-list">
-            <li class="footer__social-item">
-                <a href="https://www.youtube.com/@UWPO/featured" class="footer__social-link" target="_blank">
-                    <svg class="footer__social-icon" width="30" height="30">
+
+        <ul class="social">
+            <li class="social__item">
+                <a href="https://www.youtube.com/@UWPO/featured" class="social__link" target="_blank">
+                    <span class="social__text">Youtube</span>
+                    <svg class="social__icon" width="25" height="25">
                         <use xlink:href="images/images.svg#youtube"></use>
                     </svg>
                 </a>
             </li>
-            <li class="footer__social-item">
-                <a href="https://www.instagram.com/u_women_photographers" class="footer__social-link" target="_blank">
-                    <svg class="footer__social-icon" width="30" height="30">
+            <li class="social__item">
+                <a href="https://www.instagram.com/u_women_photographers" class="social__link" target="_blank">
+                    <span class="social__text">Instagram</span>
+                    <svg class="social__icon" width="25" height="25">
                         <use xlink:href="images/images.svg#inst"></use>
                     </svg>
                 </a>
             </li>
         </ul>
+
         <p class="footer__copy">
             Copyright © All rights reserved
         </p>

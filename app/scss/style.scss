@@ -9,12 +9,13 @@ $blue-400: #085bb9;
 $blue-800: #081856;
 $dark-900: #0a0a0c;
 $yellow-300: #ffd646;
-$green: #00705c;
+$green: #00704b;
 
 @import 'global';
 
 
 @import 'lego/header';
+@import 'lego/footer';
 @import 'lego/hero';
 @import 'lego/about';
 @import 'lego/project-card';
@@ -23,4 +24,4 @@ $green: #00705c;
 @import 'lego/donate';
 @import 'lego/pro';
 @import 'lego/nft-platforms';
-@import 'lego/footer';
+@import 'lego/help';

@@ -7,6 +7,10 @@
     z-index: 999;
     transition: padding 0.3s;
 
+    @media (max-width: 576px) {
+        padding-top: 15px;
+    }
+
     &:after {
         content: '';
         position: absolute;
@@ -20,6 +24,10 @@
     &__top {
         display: flex;
         align-items: center;
+
+        @media (max-width: 576px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__logo {
@@ -30,16 +38,39 @@
         display: flex;
         align-items: center;
         margin-left: auto;
+
+        @media (max-width: 576px) {
+            opacity: 0;
+            pointer-events: none;
+            justify-content: space-between;
+            margin-left: 0;
+            margin-top: 10px;
+            width: 0;
+            transform: translateY(-100%);
+            transition: opacity 1s, transform 1s;
+
+            &.is-open {
+                transform: translateY(0);
+                opacity: 1;
+                pointer-events: all;
+                width: 100%;
+            }
+        }
     }
 
     &__lang-btn {
+        display: none;
+
+        // ТУТ ВКЛЮЧИТЬ ПЕРЕКЛЮЧЕНИЕ ЯЗЫКОВ, КОГДА ОНО БУДЕТ
+        // display: flex;
+
+
+        align-items: center;
         width: 80px;
         height: 40px;
         border-radius: 30px;
         background-color: rgb(241 241 241 / 75%);
         margin-right: 58px;
-        display: flex;
-        align-items: center;
         z-index: 10;
 
         &:before {
@@ -67,25 +98,22 @@
         &:after {
             backdrop-filter: blur(12px);
         }
+
+        @media (max-width: 576px) {
+            padding: 10px 0;
+        }
     }
 }
 
 .logo {
     display: block;
-    max-width: 100%;
+    flex-shrink: 0;
+    object-fit: contain;
     z-index: 10;
     transition: none;
 
-    &__img {
-        &--black {
-            display: none;
-        }
-    }
-
-    &--pro {
-        .logo__img--black {
-            display: block;
-        }
+    @media (max-width: 576px) {
+        max-width: 130px;
     }
 }
 
@@ -93,6 +121,11 @@
     position: relative;
     display: flex;
     align-items: center;
+
+    @media (max-width: 576px) {
+        width: 100%;
+        justify-content: space-between;
+    }
 
     &__line {
         display: block;
@@ -129,6 +162,7 @@
 
 
     &__btn {
+        flex-shrink: 0;
         border-radius: 4px;
         // border: 1px solid $light;
         width: 44px;
@@ -141,6 +175,10 @@
         margin-right: 40px;
         z-index: 1;
         transition: box-shadow 0.3s;
+
+        @media (max-width: 576px) {
+            margin-right: 0;
+        }
     
 
         &.is-open {
@@ -164,30 +202,65 @@
     &__list {
         border-radius: 4px;
         display: flex;
+        pointer-events: none;
         transform: scale(0) translateX(-200%);
         transition: transform 0.5s;
+
+        @media (max-width: 1200px) {
+            position: absolute;
+            width: calc(100vw - 30px);
+            height: calc(100vh - 40px);
+            left: 0;
+            top: 0;
+            flex-direction: column;
+            padding-top: 130px;
+        }
+
+        @media (max-width: 992px) and (orientation: landscape) {
+            flex-wrap: wrap;
+            height: calc(100vh - 15px);
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            background-color: #0000006e;
+            width: 300vw;
+            height: 90px;
+            left: 50%;
+            top: 50%;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+
+            @media (max-width: 1200px) {
+                width: 130%;
+                height: 130%;
+                background-color: rgba(0, 0, 0, 0.77);
+            }
+        }
+
 
         &.is-open {
             transform: scale(100%) translateX(0);
             position: relative;
+            pointer-events: all;
 
-            &:after {
-                content: '';
+            @media (max-width: 1200px) {
                 position: absolute;
-                background-color: #0000006e;
-                width: 300vw;
-                height: 63px;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                top: 50%;
-                z-index: -1;
             }
+
         }
+
+
     }
 
     &__item {
         &:not(:last-child) {
             margin-right: 20px;
+
+            @media (max-width: 1200px) {
+                margin-right: 0;
+            }
         }
     }
 
@@ -199,7 +272,11 @@
         border-bottom: 1px solid transparent;
 
         &:hover {
-            border-bottom: 1px solid $green;
+            border-color: $green;
+        }
+
+        &:active {
+            opacity: 0.9;
         }
     }
 }

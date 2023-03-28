@@ -19,13 +19,26 @@
         transition: filter 1s;
     }
 
+    &--edu {
+        @media (max-width: 768px) {
+            display: flex;
+            min-height: 100vh;
+            height: 100%;
+
+            .project-card__overlay {
+                height: auto;
+                padding: 70px 15px;
+            }
+        }
+    }
+
     // далі 4 моди карток на головній
     &--100wom:after {
         background-image: url('../images/home/100wom.jpg');
     }
 
     &--diaries:after {
-        background-image: url('../images/home/diaries.jpg');
+        background-image: url('../images/home/diaries-home.jpg');
     }
 
     &--nfts:after {
@@ -40,10 +53,25 @@
         background-image: url('../images/donates.jpg');
     }
 
+    &--education:after {
+        background-image: url('../images/edu/2.jpg');
+    }
+
+    &--contacts {
+        &:after {
+            content: none;
+        }
+
+        .project-card__overlay {
+            background-color: transparent;
+            color: $dark-900;
+        }
+    }
+
 
     // картка на сторінці нфт-платформи
     &--nft-page-bg:after {
-        background-image: url('../images/nft/nftcollspage.jpg');
+        background-image: url('../images/nft/hanna-sturdust.jpg');
     }
 
     // модифікована картка проекту із заблуренням на ховері
@@ -54,6 +82,16 @@
 
         &:hover {
 
+            &:after {
+                filter: blur(7px);
+            }
+    
+            .project-card__overlay {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 1200px) {
             &:after {
                 filter: blur(7px);
             }
@@ -81,24 +119,59 @@
         z-index: 3;
         opacity: 1;
         transition: opacity 1s;
+
+        @media (max-width: 768px) {
+            padding: 0 15px;
+        }
     }
 
     &__title {
         font-size: 48px;
         margin-bottom: 20px;
+
+        @media (max-width: 576px) {
+            font-size: 36px;
+        }
     }
 
     &__text {
-        max-width: 60%;
+        max-width: 700px;
         font-size: 18px;
         margin-bottom: 30px;
         text-align: left;
+
+        @media (max-width: 576px) {
+            font-size: 16px;
+        }
     }
 
     &__icon {
         fill: #fff;
         margin-left: 48px;
-        transition: transform 0.3s, margin-left 0.6s
+        transition: transform 0.3s, margin-left 0.6s;
+
+        @media (max-width: 576px) {
+            margin-left: 35px;
+        }
+    }
+
+    &__text-link {
+        font-weight: 700;
+        text-decoration: underline #fff;
+
+        &:hover {
+            color: $green;
+            text-decoration-color: transparent;
+        }
+
+        &:focus {
+            color: $green;
+            outline: transparent;
+        }
+
+        &:active {
+            opacity: 0.7;
+        }
     }
 
     &__link {
@@ -116,6 +189,11 @@
                 transform: scale(1.3);
                 margin-left: 68px;
             }
+        }
+
+        @media (max-width: 576px) {
+            font-size: 18px;
+            padding: 8px 16px 8px 35px;
         }
     }
 }

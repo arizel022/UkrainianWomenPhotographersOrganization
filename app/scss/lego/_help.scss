@@ -1,0 +1,31 @@
+.partners {
+    &__title {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        gap: 45px;
+    }
+
+    &__link {
+        width: 400px;
+        height: 200px;
+        border: 1px solid $dark-900;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transition: box-shadow 0.5s, opacity 0.5s;
+        
+        &:hover {
+            box-shadow: 4px 4px 8px #00000042;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+}

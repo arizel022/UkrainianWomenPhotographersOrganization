@@ -10,6 +10,11 @@ body {
     font-family: 'Nunito', sans-serif;
     color: $dark-900;
     // color: #fff;
+    @media (max-width: 1200px) {
+        &.lock {
+            overflow: hidden;
+        }
+    }
 }
 
 a, button {
@@ -44,6 +49,10 @@ main {
 
 .section {
     padding: 110px 0;
+
+    @media (max-width: 576px) {
+        padding: 70px 0;
+    }
 }
 
 .wrapper {
@@ -74,7 +83,7 @@ main {
 
     &__icon {
         display: block;
-        fill: #000;
+        fill: $light;
         transition: fill 0.5s;
     }
 
@@ -87,9 +96,10 @@ main {
         width: 0;
         border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;
-        border: 1px solid $green;
+        border: 1px solid transparent;
         color: $light;
         transition: width 0.5s, opacity 0.5s;
+        z-index: -1;
     }
 
     &__link {
@@ -101,20 +111,33 @@ main {
         height: 44px;
         border-radius: 50%;
         background-color: $green;
+        z-index: 5;
         transition: transform 0.6s, box-shadow 0.6s, margin-left 0.5s;
 
         &:hover {
             box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.295);
             margin-left: 150px;
 
+            @media (max-width: 576px) {
+                margin-left: 0;
+            }
+
+
             .social__icon {
-                fill: $light;
+                fill: $dark-900;
             }
 
             .social__text {
                 opacity: 1;
                 font-size: 24px;
                 width: auto;
+                border-color: $green;
+
+                @media (max-width: 576px) {
+                    opacity: 0;
+                    font-size: 0;
+                    width: 0;
+                }
             }
         }
     }
@@ -139,7 +162,13 @@ main {
         height: 1px;
         background-color: $green;
     }
+
+    @media (max-width: 576px) {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
 }
+
 
 .donate {
     &__icon {

@@ -12,20 +12,17 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
-
-    <!-- <button class="search-form__button"></button>
-    <button class="search-form__button search-form__button--small"></button> -->
-
+<body data-body>
     <header class="header fixed" id="header">
     <div class="container header__container">
 
         <div class="header__top">
-            <a class="logo header__logo" href="./index.html">
-                <img class="logo__img" src="images/logo--white.svg" alt="logo Ukrainian Women Photographers Organization white" width="150" height="47">
-            </a>
+
 
             <nav class="menu">
+                <a class="logo header__logo" href="./index.html">
+                    <img class="logo__img" src="images/logo--white.svg" alt="logo Ukrainian Women Photographers Organization white" width="150" height="47">
+                </a>
                 <button class="menu__btn int-btn" type="button" data-menu-button>
                     <span class="menu__line"></span>
                     <span class="visually-hidden">Open main menu</span>
@@ -35,48 +32,50 @@
                         <a href="./index.html" class="menu__link">Home</a>
                     </li>
                     <li class="menu__item">
-                        <a href="./index.html#about" class="menu__link">About</a>
+                        <a href="./index.html#about" class="menu__link anchor" data-menu-link>About</a>
                     </li>
                     <li class="menu__item">
                         <a href="./nft-page.html" class="menu__link">NFT collections</a>
                     </li>
                     <li class="menu__item">
-                        <a href="./index.html#projects" class="menu__link">Projects</a>
+                        <a href="./index.html#projects" class="menu__link anchor" data-menu-link>Projects</a>
                     </li>
                     <li class="menu__item">
                         <a href="./education.html" class="menu__link">Education</a>
                     </li>
                     <li class="menu__item">
-                        <a href="./donates.html" class="menu__link">Donates</a>
+                        <a href="./help.html" class="menu__link">Help</a>
                     </li>
                     <li class="menu__item">
-                        <a href="./index.html#footer" class="menu__link">Contacts</a>
+                        <a href="./contacts.html" class="menu__link">Contacts</a>
                     </li>
                 </ul>
             </nav>
 
-            <div class="header__ints">
+            <div class="header__ints" data-header-ints>
                 <a class="header__lang-btn int-btn" href="">
                     <span class="header__btn-txt">ua</span>
                 </a>
+
                 <ul class="social">
                     <li class="social__item">
-                        <a href="https://opensea.io/collection/uwpo" class="social__link">
-                            <span class="social__text">OpenSea</span>
-                            <svg class="social__icon" width="31" height="28">
-                                <use xlink:href="images/images.svg#opensea"></use>
+                        <a href="https://www.youtube.com/@UWPO/featured" class="social__link" target="_blank">
+                            <span class="social__text">Youtube</span>
+                            <svg class="social__icon" width="25" height="25">
+                                <use xlink:href="images/images.svg#youtube"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a href="https://foundation.app/@UWPO" class="social__link">
-                            <span class="social__text">Foundation</span>
-                            <svg class="social__icon" width="31" height="28">
-                                <use xlink:href="images/images.svg#foundation"></use>
+                        <a href="https://www.instagram.com/u_women_photographers" class="social__link" target="_blank">
+                            <span class="social__text">Instagram</span>
+                            <svg class="social__icon" width="25" height="25">
+                                <use xlink:href="images/images.svg#inst"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
+
             </div>
         </div>
 
@@ -84,56 +83,50 @@
 </header>
     <main>
         <div class="wrapper">
+            <article class="project-card project-card--education">
+                <div class="project-card__overlay">
+                    <h1 class="project-card__title">
+                        Program options
+                    </h1>
+                    <!-- <p class="project-card__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia commodi impedit id, ipsam doloremque nam possimus sapiente assumenda et ut debitis quae tempora provident. Labore ratione facere blanditiis velit reiciendis?
+                    </p> -->
+                </div>
+            </article>
             <section class="edu section">
                 <div class="container">
-                    <h2 class="title">Program options</h2>
                     <ul class="edu__list">
                         <li class="edu__item">
-                            <article class="card">
-                                <div class="card__content">
-                                    <h3 class="card__title">
+                            <article class="edu-card">
+                                <img src="./images/edu/1.jpg" alt="" class="edu-card__img" width="400" height="600">
+                                <div class="edu-card__content">
+                                    <h2 class="edu-card__title">
                                         Mentoring support
-                                    </h3>
-                                    <p class="card__text">
+                                    </h2>
+                                    <p class="edu-card__text">
                                         Ukrainian women photography organization present a mentorship program for visual
                                         artists and
                                         storytellers seeking in-depth guidance on a project.
                                         Our mentorship provides an opportunity to work online with one of our selected
                                         menthors one-on-one.
-
-
-                                        <!-- <a href="" class="card__link">
-                                            Читати далі...
-                                            <svg class="card__icon" width="25" height="15">
-                                                <use xlink:href="images/images.svg#long-arrow-right"></use>
-                                            </svg>
-                                        </a> -->
                                     </p>
                                 </div>
-                                <img src="./images/edu/1.jpg" alt="" class="card__img" width="400">
+
 
                             </article>
                         </li>
                         <li class="edu__item">
-                            <article class="card">
-                                <img src="./images/edu/2.jpg" alt="" class="card__img" width="600">
-                                <div class="card__content">
-                                    <h3 class="card__title">
+                            <article class="edu-card">
+                                <img src="./images/edu/3.jpg" alt="" class="edu-card__img" width="400" height="600">
+                                <div class="edu-card__content">
+                                    <h2 class="edu-card__title">
                                         Seminars
 
-                                    </h3>
-                                    <p class="card__text">
+                                    </h2>
+                                    <p class="edu-card__text">
                                         Ukrainian women photography organization offers different workshops around
                                         Europe, aimed at all
                                         levels photographers.
-
-
-                                        <!-- <a href="" class="card__link">
-                                            Читати далі...
-                                            <svg class="card__icon" width="25" height="15">
-                                                <use xlink:href="images/images.svg#long-arrow-right"></use>
-                                            </svg>
-                                        </a> -->
                                     </p>
                                 </div>
 
@@ -144,131 +137,7 @@
                     </ul>
                 </div>
             </section>
-            <!-- <section class="news section">
-                <div class="container">
-                    <h2 class="title">Новини</h2>
-                    <ul class="news__list">
-                        <li class="news__item">
-                            <article class="card">
-                                <div class="card__inner">
-                                    <img src="./images/news.jpg" alt="фото новини" class="card__img" width="310"
-                                        height="207">
-                                    <div class="card__content">
-                                        <h3 class="card__title">
-                                            Заголовок новини
-                                        </h3>
-                                        <p class="card__text">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat,
-                                            enim
-                                            quis
-                                            hendrerit ultrices, ante urna pulvinar dolor, faucibus lobortis sapien odio
-                                            eget
-                                            ipsum.sapien odio
-                                            eget ipsum.
-
-                                        </p>
-                                        <a href="" class="card__link">
-                                            Читати далі...
-                                            <svg class="card__icon" width="25" height="15">
-                                                <use xlink:href="images/images.svg#long-arrow-right"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                        </li>
-                        <li class="news__item">
-                            <article class="card">
-                                <div class="card__inner">
-                                    <img src="./images/news.jpg" alt="фото новини" class="card__img" width="310"
-                                        height="207">
-                                    <div class="card__content">
-                                        <h3 class="card__title">
-                                            Заголовок новини
-                                        </h3>
-                                        <p class="card__text">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat,
-                                            enim
-                                            quissapien odio eget
-                                            ipsum.
-                                            hendrerit ultrices, ante urna pulvinar dolor, faucibus lobortis sapien odio
-                                            eget
-                                            ipsum.
-
-                                        </p>
-                                        <a href="" class="card__link">
-                                            Читати далі...
-                                            <svg class="card__icon" width="25" height="15">
-                                                <use xlink:href="images/images.svg#long-arrow-right"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                        </li>
-                        <li class="news__item">
-                            <article class="card">
-                                <div class="card__inner">
-                                    <img src="./images/news.jpg" alt="фото новини" class="card__img" width="310"
-                                        height="207">
-                                    <div class="card__content">
-                                        <h3 class="card__title">
-                                            Заголовок новини
-                                        </h3>
-                                        <p class="card__text">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat,
-                                            enim
-                                            quis
-                                            hendrerit ultrices, ante urna pulvinar dolor, faucibus lobortis sapien odio
-                                            eget
-                                            ipsum.sapien odio
-                                            eget ipsum.
-                                        </p>
-                                        <a href="" class="card__link">
-                                            Читати далі...
-                                            <svg class="card__icon" width="25" height="15">
-                                                <use xlink:href="images/images.svg#long-arrow-right"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                        </li>
-                        <li class="news__item">
-                            <article class="card">
-                                <div class="card__inner">
-                                    <img src="./images/news.jpg" alt="фото новини" class="card__img" width="310"
-                                        height="207">
-                                    <div class="card__content">
-                                        <h3 class="card__title">
-                                            Заголовок новини
-                                        </h3>
-                                        <p class="card__text">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat,
-                                            enim
-                                            quis
-                                            hendrerit ultrices, ansapien odio eget ipsum.te urna pulvinar dolor,
-                                            faucibus
-                                            lobortis sapien odio
-                                            eget ipsum.rerit ultrices, ansapien odio eget ipsum.te urna pulvinar dolor,
-                                            faucibus lobortis sapien
-                                            odio eget ipsum.
-                                        </p>
-                                        <a href="" class="card__link">
-                                            Читати далі...
-                                            <svg class="card__icon" width="25" height="15">
-                                                <use xlink:href="images/images.svg#long-arrow-right"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                        </li>
-                    </ul>
-                </div>
-            </section> -->
         </div>
-
     </main>
     <footer class="footer" id="footer">
     <div class="container footer__container">
@@ -299,22 +168,26 @@
                 </a>
             </li>
         </ul>
-        <ul class="footer__social-list">
-            <li class="footer__social-item">
-                <a href="https://www.youtube.com/@UWPO/featured" class="footer__social-link" target="_blank">
-                    <svg class="footer__social-icon" width="30" height="30">
+
+        <ul class="social">
+            <li class="social__item">
+                <a href="https://www.youtube.com/@UWPO/featured" class="social__link" target="_blank">
+                    <span class="social__text">Youtube</span>
+                    <svg class="social__icon" width="25" height="25">
                         <use xlink:href="images/images.svg#youtube"></use>
                     </svg>
                 </a>
             </li>
-            <li class="footer__social-item">
-                <a href="https://www.instagram.com/u_women_photographers" class="footer__social-link" target="_blank">
-                    <svg class="footer__social-icon" width="30" height="30">
+            <li class="social__item">
+                <a href="https://www.instagram.com/u_women_photographers" class="social__link" target="_blank">
+                    <span class="social__text">Instagram</span>
+                    <svg class="social__icon" width="25" height="25">
                         <use xlink:href="images/images.svg#inst"></use>
                     </svg>
                 </a>
             </li>
         </ul>
+
         <p class="footer__copy">
             Copyright © All rights reserved
         </p>
