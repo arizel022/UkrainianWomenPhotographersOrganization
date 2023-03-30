@@ -19,10 +19,15 @@
     width: 100%;
     text-align: center;
 
+    &__thumb {
+        margin: 0 auto;
+        width: fit-content;
+        position: relative;
+    }
+
     &__img {
         object-fit: cover;
-        margin: 0 auto;
-
+    
         @media (max-width: 576px) {
             height: auto;
         }

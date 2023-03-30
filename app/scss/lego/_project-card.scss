@@ -34,7 +34,7 @@
 
     // далі 4 моди карток на головній
     &--100wom:after {
-        background-image: url('../images/home/100wom.jpg');
+        background-image: url('../images/projects/100women/Maria-Petrenko.jpg');
     }
 
     &--diaries:after {
@@ -92,9 +92,9 @@
         }
 
         @media (max-width: 1200px) {
-            &:after {
-                filter: blur(7px);
-            }
+            // &:after {
+            //     filter: blur(7px);
+            // }
     
             .project-card__overlay {
                 opacity: 1;
