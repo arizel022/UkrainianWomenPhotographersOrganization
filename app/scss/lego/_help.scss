@@ -17,7 +17,7 @@
         border: 1px solid $dark-900;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
+        background-size: 60% auto;
         transition: box-shadow 0.5s, opacity 0.5s;
         
         &:hover {
